@@ -9,13 +9,14 @@
     <el-row class="tac">
       <el-col :span="4" class='nav-spider'>
         <el-menu default-active="1" class="el-menu-spider" @select="handleOpen">
-          <el-menu-item index="1"><i class="el-icon-menu"></i>导航一</el-menu-item>
-          <el-menu-item index="2"><i class="el-icon-menu"></i>导航二</el-menu-item>
-          <el-menu-item index="3"><i class="el-icon-setting"></i>导航三</el-menu-item>
+          <el-menu-item index="1"><i class="el-icon-menu"></i>界面管理</el-menu-item>
+          <el-menu-item index="2"><i class="el-icon-menu"></i>用户管理</el-menu-item>
+          <el-menu-item index="3"><i class="el-icon-setting"></i>系统设置</el-menu-item>
+          <el-menu-item index="3"><i class="el-icon-setting"></i>统计数据</el-menu-item>
         </el-menu>
       </el-col>
 
-      <el-col :span="20">
+      <el-col class="content" :span="20">
         <router-view></router-view>
       </el-col>
     </el-row>
